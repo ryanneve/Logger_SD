@@ -1,0 +1,46 @@
+#######################################
+# Syntax Coloring Map For Logger_SD
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+Logger_SD	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+initializeSD	KEYWORD2
+saveSample	KEYWORD2
+initializeSample	KEYWORD2
+msgL	KEYWORD2
+
+
+setLogDT	KEYWORD2
+initializeLog	KEYWORD2
+initializeConfig	KEYWORD2
+getConfig	KEYWORD2
+closeConfig	KEYWORD2
+setSampleFile	KEYWORD2
+saveSample	KEYWORD2
+msgL	KEYWORD2
+setDebug	KEYWORD2
+_sd_msg	KEYWORD2
+_msg	KEYWORD2
+_write_buffer	KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+DEBUG	LITERAL1
+INFO	LITERAL1
+WARN	LITERAL1
+ERROR	LITERAL1
+CRITICAL	LITERAL1
+LOGGER_BUFFER_SIZE LITERAL1
+SAMPLE_BUFFER_SIZE LITERAL1
