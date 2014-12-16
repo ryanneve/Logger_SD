@@ -72,15 +72,9 @@ bool Logger_SD::initializeSD(const uint8_t chip_select, const uint8_t disable_ch
 void Logger_SD::initializeSample(const char * header){
   bool new_file = !SD.exists(_sample_file_name);
   if ( new_file ) msgL(INFO,F("%s will be created."),_sample_file_name);
+  else  msgL(DEBUG,F("%s opened."),_sample_file_name);
   _sample_file.open(_sample_file_name,(O_WRITE | O_APPEND | O_CREAT)); // Open file for WRITING and APPENDING
-  if ( new_file ) _sample_file.print(header);
-  else {
-    msgL(DEBUG,F("%s opened."),_sample_file_name);
-    // No header, just a dividing line
-    for ( uint8_t i = 0 ; i <= 80 ; i++ ) { _sample_file.write('_'); }
-    _sample_file.write(13);
-    _sample_file.write(10);
-  }
+  _sample_file.print(header);
   _sample_file.close();  
 }
 
